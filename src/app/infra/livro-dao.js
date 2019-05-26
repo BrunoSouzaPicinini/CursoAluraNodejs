@@ -44,14 +44,16 @@ class LivroDao {
     }
 
     buscaPorId(id) {
-        return new Promise((resolve, reject) =>{
-            this._db.all(
-                'SELECT * FROM livros WHERE ID = ?',
+        return new Promise((resolve, reject) => {
+            this._db.get(
+                'SELECT * FROM livros WHERE id = ?',
                 [id],
-                (erro, resultados) => {
-                    if (erro) return reject('Não foi possível buscar o livro!');
+                (erro, livro) => {
+                    if (erro) {
+                        return reject('Não foi possível buscar o livro!');
+                    }
 
-                    return resolve(resultados);
+                    return resolve(livro);
                 }
             )
         });
