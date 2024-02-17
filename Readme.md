@@ -10,4 +10,4 @@ Instalar dependências:```npm install```
 
 Rodar projeto: ```npm start```
 
-
+Rebuild dos templates marko: ```npx marko/build .```
