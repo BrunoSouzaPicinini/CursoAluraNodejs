@@ -11,12 +11,31 @@
 }
 
 .cabecalhoPrincipal-navegacao .login {
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.2);    
     border-radius: 38px;
     font-size: 20px;
     padding: 5px;
     color: #FFFFFF;
     text-decoration: none;
+}
+
+.container .novo {
+    text-align: right;
+    font-size: 20px;
+    padding: 5px;
+    padding-right: 15px;
+    color: rgba(20, 59, 144, 0.87);
+    text-decoration: none;
+}
+
+.container .novo a {
+    background-color: rgba(58, 53, 53, 0.2);
+    border-radius: 38px;
+    padding: 5px;
+}
+
+.container .novo i {
+    margin-right: 10px;
 }
 
 .cabecalhoPrincipal-navegacao .login i {
